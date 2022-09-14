@@ -3,6 +3,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class master_branch {
+	//inline comment
+	
 	//feature 1: sort a list of integers
 	public static String sort_integers(int amount, Scanner sc) {
 		ArrayList<Integer> list = new ArrayList<>(amount);
