@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class master_branch {
 	
-	public static void sort_integers(int amount, Scanner sc) {
+	public static String sort_integers(int amount, Scanner sc) {
 		ArrayList<Integer> list = new ArrayList<>(amount);
 		for (int i = 0; i < amount; i++) {
 			System.out.print("Please enter an integer: ");
@@ -19,6 +19,12 @@ public class master_branch {
 		System.out.print("The sorted list of integers is: ");
 		for (int i: list)
 			System.out.print(i + " ");
+		String s = "";
+		for (int i: list) {
+			s += i;
+			s += " ";
+		}
+		return s;
 	}
 	
 	public static void main(String[] args) {
@@ -52,10 +58,22 @@ public class master_branch {
 		
 		//feature 1: sort a list of integers entered by user
 		if (f1) {
-			sort_integers(amount, sc);
+			ArrayList<Integer> list = new ArrayList<>(amount);
+			for (int i = 0; i < amount; i++) {
+				System.out.print("Please enter an integer: ");
+				while (!sc.hasNextInt()) {
+					System.out.print("Invalid input. Please enter an integer: ");
+					sc.next();
+				}
+				list.add(sc.nextInt());
+			}
+			Collections.sort(list);
+			System.out.print("The sorted list of integers is: ");
+			for (int i: list)
+				System.out.print(i + " ");
 		}
 		
-		
+		sc.close();
 	}
 
 }
