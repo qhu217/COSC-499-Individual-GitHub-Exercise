@@ -3,7 +3,7 @@
 
 Project description:
   
-    The obejctive of this project is to validate and sort a list of integers or characters entered by the user. 
+    The obejctive of this project is to validate user input and sort a list of integers or characters entered by the user. 
 
 Feature #1 overview:
     
