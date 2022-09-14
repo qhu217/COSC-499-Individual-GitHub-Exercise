@@ -1,6 +1,10 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+<<<<<<< Updated upstream
 import java.util.Arrays;
+=======
+import java.util.Collections;
+>>>>>>> Stashed changes
 
 public class master_branch {
 	
@@ -26,8 +30,17 @@ public class master_branch {
 		}
 		int amount = sc.nextInt();
 		
+<<<<<<< Updated upstream
 		
 		
+=======
+		//feature 1: sort a list of integers entered by user
+		if (f1) {
+			sort_integers(amount, sc);
+		}
+
+		sc.close();
+>>>>>>> Stashed changes
 	}
 
 }
