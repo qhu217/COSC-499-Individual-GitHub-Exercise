@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class master_branch {
@@ -26,8 +25,6 @@ public class master_branch {
 		}
 		return s;
 	}
-
-public class master_branch {
 		
 	public static void main(String[] args) {
 		// main function: ask for user to enter a list of numbers or characters
